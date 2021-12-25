@@ -1,0 +1,78 @@
+Every variable type we have seen this far can be used as a return value
+public static void methodThatReturnsNothing() {
+  // method body
+}
+
+public static int methodThatReturnsInteger() {
+  // method body, needs a return statement
+}
+
+public static String methodThatReturnsText() {
+  // method body, needs a return statement
+}
+
+public static double methodThatReturnsFloatingpoint() {
+  // method body, needs a return statement
+}
+
+String
+readers and string are both objets, they are not very similar. For example, readers (Scanner) have the nextLine() method, but Strings do not. In the Java programming language, objects must be “born”, in other words created with the new command. Strings are objects that make an exception to this rule. 
+
+String banana = new String("Banana");
+String carrot = "carrot";
+
+Both of the commands above create a new String objects. Using the new command when creating a String objects is uncommon.
+The object’s “type” is called a class. The class of a string of characters is called String and the class of readers is called Scanner. Later we learn much more about classes and objects. 
+
+ArrayList or object container
+import java.util.ArrayList;
+
+public class ListProgram {
+
+    public static void main(String[] args) {
+        ArrayList<String> wordList = new ArrayList<String>();
+
+        wordList.add("First");
+        wordList.add("Second");
+    }
+}
+In the above main program method, the first row creates a new ArrayList called wordList, which can be used as a container for String variable. The type of the ArrayList is ArrayList<String>, which means that the ArrayList is meant for storing Strings. The list is created using the command new ArrayList<String>();.
+
+Note: to make the ArrayList work, we must first write an import statement at the beginning of the program either import java.util.ArrayList; or import java.util.*;
+
+When the list is created, two strings are added by calling the list method add. The list will not run out of space, so theoretically the list can contain any amount of Strings (as long as they fit in the computer’s memory).
+Internally an ArrayList is —as it’s name suggests — a list. The added strings automatically go to the end of theArrayList.
+
+Method of ArrayList
+public static void main(String[] args) {
+    ArrayList<String> teachers = new ArrayList<String>();
+
+    teachers.add("Anthony");
+    teachers.add("Barto");
+    teachers.add("Paul");
+    teachers.add("John");
+    teachers.add("Martin");
+    teachers.add("Matt");
+
+    System.out.println("the number of teachers " + teachers.size() );
+
+    System.out.println("first teacher on the list " + teachers.get(0));
+    System.out.println("third teacher on the list " + teachers.get(2));
+
+    teachers.remove("Barto");
+
+    if (teachers.contains("Barto")) {
+        System.out.println("Barto is on the teachers list");
+    } else {
+        System.out.println("Barto is not on the teachers list");
+    }
+}
+
+First a list of strings is created and then 6 names added to it. size tells us the amount of strings in the list. Note: when the method is called, the call should have the following format: teachers.size(). First comes the name of the object, then follows a dot followed by the name of the method.
+
+The strings will be in the list in the order in which they were added to it. By calling the method  get(i), we get the value from the index (location) i in the list. The indexing of items in the list starts from 0. This means that the first added string is located at index 0, the second at index 1, and so on.
+
+We can remove string from lists through the method remove. The method can be used in two ways. First, remove("characters") removes the string given as a parameter. Second, remove(3) removes the 4th String from the list.
+
+At the end of the example, the method contains is called. This method is used for asking the list if it contains the string given as a parameter. If it does, the method returns the value true.
+

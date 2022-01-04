@@ -5,7 +5,7 @@ public class Exercise1 {
 		System.out.println("Jane Doe");
 		System.out.println();
 		
-		String name = "Jane Doe";
-		System.out.println(name);
+		/*String name = "Jane Doe";
+		System.out.println(name);*/
 	}
 }

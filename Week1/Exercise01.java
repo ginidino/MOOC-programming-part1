@@ -9,6 +9,6 @@ public class Exercise01 {
 		System.out.println("Jane Doe \n");
 		
 		String name = "Jane Doe";
-		System.out.println(name + "\n");
+		System.out.println(name);
 	}
 }

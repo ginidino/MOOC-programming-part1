@@ -5,8 +5,12 @@ import java.util.*;
 public class Exercise68 {
 	public static boolean moreThanOnce(ArrayList<Integer> list, int number) {
 	    // write your code here
-		for (Integer n : list) {
-			if (list.contains(number) && n==n) {
+		int howMany = 0;
+		for (int numList : list) {
+			if (numList == number) {
+				howMany ++;
+			} 
+			if (howMany > 1) {
 				return true;
 			}
 		}

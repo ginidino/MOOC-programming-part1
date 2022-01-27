@@ -1,7 +1,10 @@
-package Test;
+package WEEK3;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
+// Remove last
+// Create the method public static void removeLast(ArrayList<String> list), which removes the last item from the list.
 public class Exercise62 {
 	public static void main(String[] args) {
 		ArrayList<String> brothers = new ArrayList<String>();
@@ -17,8 +20,12 @@ public class Exercise62 {
 		Collections.sort(brothers);
 		
 		// removing the last item
-		brothers.remove(brothers.size()-1);
+		removeLast(brothers);
 		
 		System.out.println(brothers);
+	}
+
+	public static void removeLast(ArrayList<String> list) {
+		list.remove(list.size()-1);
 	}
 }

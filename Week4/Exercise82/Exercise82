@@ -1,1 +1,6 @@
-
+ class LotteryNumbers, which draws the lottery numbers of the week.
+ 
+the constructor LotteryNumbers creates a new LotteryNumbers object, which contains the new drawn numbers
+the method numbers returns the drawn numbers of this draw
+the method drawNumbers draws new numbers
+the method containsNumber reveals if the number is among the drawn numbers

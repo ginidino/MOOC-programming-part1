@@ -1,1 +1,4 @@
+In the template is class Dice that has the following functionality:
 
+The constructor Dice(int numberOfSides) creates a new dice object that has the amount of sides defined by the argument.
+The method roll tells the result of a roll

@@ -1,8 +1,8 @@
 Exercise72 is divided into 3 part
-  The object of the class Account represents a bank account that has a balance (meaning some amount of money)
+  * The object of the class Account represents a bank account that has a balance (meaning some amount of money)
 
 Exercise 72.1 is that Your first account
-  Create a program that creates an account with the balance of 100.0, deposits 20.0 and prints the account. 
+  * Create a program that creates an account with the balance of 100.0, deposits 20.0 and prints the account. 
   Note! do all the steps described in the exercise exactly in the described order!
   
 Exercise 72.2 is that Your first money transfer
@@ -17,14 +17,15 @@ Exercise 72.2 is that Your first money transfer
 Exercise 72.3 is that Money transfers
   Note: there is a different exercise template for each of the sub-exercises
   
-  In the above program, you made a money transfer from one person to another. Let us next create a method that does the same!
+  * In the above program, you made a money transfer from one person to another. Let us next create a method that does the same!
 
-Create the method public static void transfer(Account from, Account to, double howMuch) in the given program body. The method transfers money from one account to another. You do not need to check that the from account has enough balance.
+  * Create the method public static void transfer(Account from, Account to, double howMuch) in the given program body. 
+    The method transfers money from one account to another. You do not need to check that the from account has enough balance.
 
-After completing the above, make sure that your main method does the following:
+  * After completing the above, make sure that your main method does the following:
 
-Creates an account "A" with the balance of 100.0
-Creates an account "B" with the balance of 0.0
-Creates an account "C" with the balance of 0.0
-Transfers 50.0 from account A to account B
-Transfers 25.0 from account B to account C
+  * Creates an account "A" with the balance of 100.0
+  * Creates an account "B" with the balance of 0.0
+  * Creates an account "C" with the balance of 0.0
+  * Transfers 50.0 from account A to account B
+  * Transfers 25.0 from account B to account C

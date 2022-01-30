@@ -1,7 +1,8 @@
 Exercise84 is divided into two parts.
 
 Exercise 84.1 is about Multiple constructors
-  Make a class Counter that holds a number that can be decreased and increased. The counter also has an optional check that prevents the counter from going below 0.
+  Make a class Counter that holds a number that can be decreased and increased. 
+  The counter also has an optional check that prevents the counter from going below 0.
   public Counter(int startingValue, boolean check) creates a new counter with the given value. The check is on if the parameter given to check was true.
   public Counter(int startingValue) creates a new counter with the given value. The check on the new counter should be off.
   public Counter(boolean check) creates a new counter with the starting value 0. The check is on if the parameter given to check was true.

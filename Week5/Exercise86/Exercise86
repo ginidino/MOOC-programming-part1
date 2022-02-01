@@ -1,6 +1,19 @@
 Exercise 86 is divided into 4 part
+  * In the last set of exercises, we implemented the class LyyraCard. 
+    The card had methods for paying economical and gourmet lunches and a method for loading money.
+    Last week's version of the card is however somehow problematic. 
+    The card knew the lunch prices so that it could take the right price from the balance if a lunch was paid. What if the lunch prices change? 
+    Or what if it is decided that LyyraCards could also be used to purchase coffee? 
+    A change like these would mean that all the existing LyyraCards should be replaced with the new ones with the right prices and/or new methods. 
+    This does not sound good at all!
+    A better solution is to store only the balance on the card and have all the inteligence in a cash register.
 
 Exercise 86.1 is that The "stupid" Lyyra card
+  * The cash register but let us start by completing the "stupid" version of the Lyyra card. 
+  * The card holds the balance and has only two methods, public void loadMoney(double amount) that is already implemented and public boolean pay(double amount)
 Exercise 86.2 is that Cash Register and paying with cash
+  *
 Exercise 86.3 is that Paying with card
+  *
 Exercise 86.4 is that Loading money
+  *

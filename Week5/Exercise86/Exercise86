@@ -46,6 +46,7 @@ Exercise 86.2 is that Cash Register and paying with cash
 }
 Exercise 86.3 is that Paying with card
   * Extend the cash register with methods to charge a lunch price from a Lyyra Card
+  * Note: card payments do not affect the amount of money in the register!
 Exercise 86.4 is that Loading money
   * To complete the assignment, extend the cash register with a method that can be used to load cash to Lyyra Cards. 
   * When a certain amount is loaded to the card, the amount stored in the register increases correspondingly.

@@ -1,1 +1,14 @@
+Exercise85 is divided into 3 part
 
+Exercise85.1 is that Weight of a person
+  * The reformatory class already has a method skeleton public int weight(Person person)
+  * The method gets a person object as a parameter. 
+  * The method is supposed to return the weight of the parameter, so the method should call a suitable method of person, get the return value and then return it to the caller.
+
+Exercise85.2 is that Feeding a person
+  * the method weight queried some information from the parameter object by calling its method. 
+  * It is also possible to change the state of the parameter. 
+  * Add to class Reformatory the method public void feed(Person person) that increases the weight of its parameter by one.
+  
+Exercise 85.3 is that Number of times a weight has been measured
+  * Add to class Reformatory the method public int totalWeightsMeasured() that returns the total number of times a weight has been measured.

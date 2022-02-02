@@ -1,1 +1,14 @@
+Exercise87 is divided into 3 part
 
+Exercise 87.1 is that Larger
+  * Implement the method public boolean larger(Apartment otherApartment) that returns true 
+    if the Apartment object for which the method is called (this) is larger than the apartment object given as parameter (otherApartment).
+ 
+Exercise 87.2 is that Price difference
+  * Implement the method public int priceDifference(Apartment otherApartment) that returns the absolute value of the price difference of the Apartment object 
+    for which the method is called (this) and the apartment object given as parameter (otherApartment). 
+    The price of an apartment is squareMeters * pricePerSquareMeter.
+    
+Exercise 87.3 is that more expensive than
+  * Implement the method public boolean moreExpensiveThan(Apartment otherApartment) that returns true if the Apartment-object 
+    for which the method is called (this) has a higher price than the apartment object given as parameter (otherApartment).

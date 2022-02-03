@@ -13,8 +13,13 @@ Exercise 88.1 is that Class Student
   * toString, that returns a String representation of the form: Pekka Mikkola (013141590)
   
 Exercise 88.2 is that List of students
-  * the program asks for student information from the user until the user gives a student an empty name. After the student info has been enteres, all the students are printed. From each inputted name-studentnumber-pair, the program should create a Student object. The program should store the students in an ArrayList 
+  * the program asks for student information from the user until the user gives a student an empty name. 
+    After the student info has been enteres, all the students are printed. From each inputted name-studentnumber-pair, the program should create a Student object. 
+    The program should store the students in an ArrayList 
   
 Exercise 88.3: Search
-  * Extend the program of the previous part so that after the student info has been entered and students printed, the user can search the student list based on a given search term.
-  * TIP: in the search you should iterate (using for or while) through the student list and by using the method contains of String check if a student's name (obtained with method getName) matches the search term.
+  * Extend the program of the previous part so that after the student info has been entered and students printed, 
+    the user can search the student list based on a given search term.
+    
+  * TIP: in the search you should iterate (using for or while) through the student list and by using the method contains of String check 
+         if a student's name (obtained with method getName) matches the search term.

@@ -1,5 +1,5 @@
 Exercise89 is related to Exercise78
 it is about Clock object
 
-In assignment 78, I used objects of the class BoundedCounter to implement a clock in the main method. 
-In this assignment, I will tranform the clock to an object. 
+  * In assignment 78, I used objects of the class BoundedCounter to implement a clock in the main method. 
+  * In this assignment, I will tranform the clock to an object. 

@@ -1,17 +1,17 @@
 Exercise91 is divided into 3 part
   * In this assignment we will extend the class MyDate
 
-Exercise 91.1: Next day
+Exercise 91.1 is about Next day
   * Add to the class MyDate the method public void advance() that advances the date by one. 
   * Note: In this assignment we assume that all the months have 30 days!
 
-Exercise 91.2: Advancing many days
+Exercise 91.2 is about Advancing many days
   * Add also overloaded version public void advance(int numberOfDays). 
     This method should advance the day by the number given as parameter. 
     Implement this method so that it calls the method advance() that was defined in the previous part of the assignment, 
     e.g. the call advance(5) should call advance() 5 times. Again assume that all the months have 30 days!
     
-Exercise 91.3: Creation of a new date
+Exercise 91.3 is about Creation of a new date
   * Add to the class MyDate the method MyDate afterNumberOfDays(int days), 
     that returns a new MyDate-object that has the date which equals the date of the object for which the method was called advance
     by the parameter of the method days. Again assume that all the months have 30 days!

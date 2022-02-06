@@ -1,6 +1,6 @@
 Exercise93 is about 'Person' and is divided into 3 part
 
-Exercise 93.1: Calculating the age based on the birthday
+Exercise 93.1 is about Calculating the age based on the birthday
    * Person is extended by adding to it a birthday represented as a MyDate object
     It was noticed that after the addition the instance variable age has no role since the age could easily be calculated based on the current date and the birthday.
   * implement the method age that calucates and returns the age of the person.
@@ -49,7 +49,7 @@ Exercise 93.1: Calculating the age based on the birthday
   Thomas age 59 years
   Pekka age 21 years
 
-Exercise 93.2: Comparing ages based on birthdate
+Exercise 93.2 is about Comparing ages based on birthdate
   * Add to the class Person the method boolean olderThan(Person compared) 
     which compares the ages of the object for which the method is called and the object given as parameter. 
     The method returns true if the object itself is older than the parameter.
@@ -72,7 +72,7 @@ Exercise 93.2: Comparing ages based on birthdate
   Martin is older than Pekka: false
   Pekka is older than Martin: true
 
-Exercise 93.3: New constructors
+Exercise 93.3 is about New constructors
   * Add to the class Person two new constructors:
 
   * public Person(String name, MyDate birthday) constructor sets the given MyDate-object to be the birthday of the person

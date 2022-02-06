@@ -1,1 +1,97 @@
+Exercise93 is about 'Person' and is divided into 3 part
 
+Exercise 93.1: Calculating the age based on the birthday
+   * Person is extended by adding to it a birthday represented as a MyDate object
+    It was noticed that after the addition the instance variable age has no role since the age could easily be calculated based on the current date and the birthday.
+  * implement the method age that calucates and returns the age of the person.
+
+  * Note: in the previous assignment we added the class MyDate method public int differenceInYears(MyDate compared). 
+  
+  import java.util.Calendar;
+
+  public class Person {
+    private String name;
+    private MyDate birthday;
+
+    public Person(String name, int pp, int kk, int vv) {
+        this.name = name;
+        this.birthday = new MyDate(pp, kk, vv);
+    }
+
+    public int age() {
+        // calculate the age based on the birthday and the current day
+        // you get the current day as follows:
+        // Calendar.getInstance().get(Calendar.DATE);
+        // Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add one
+        // Calendar.getInstance().get(Calendar.YEAR);
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String toString() {
+        return this.name +", born "+ this.birthday;
+    }
+  }
+  the Main method code
+  public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", 15, 2, 1993);
+        Person steve = new Person("Thomas", 1, 3, 1955);
+
+        System.out.println( steve.getName() + " age " + steve.age() + " years");
+        System.out.println( pekka.getName() + " age " + pekka.age() + " years");
+    }
+  }
+
+  the output
+  Thomas age 59 years
+  Pekka age 21 years
+
+Exercise 93.2: Comparing ages based on birthdate
+  * Add to the class Person the method boolean olderThan(Person compared) 
+    which compares the ages of the object for which the method is called and the object given as parameter. 
+    The method returns true if the object itself is older than the parameter.
+  
+  public boolean olderThan(Person compared) {
+       // compare the ages based on birthdate
+  }
+  
+  the Main method code:
+  public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", 15, 2, 1983);
+        Person martin = new Person("Martin", 1, 3, 1983);
+
+        System.out.println( martin.getName() + " is older than " +  pekka.getName() + ": "+ martin.olderThan(pekka) );
+        System.out.println( pekka.getName() + " is older than " +  martin.getName() + ": "+ pekka.olderThan(martin) );
+    }
+  }
+  output:
+  Martin is older than Pekka: false
+  Pekka is older than Martin: true
+
+Exercise 93.3: New constructors
+  * Add to the class Person two new constructors:
+
+  * public Person(String name, MyDate birthday) constructor sets the given MyDate-object to be the birthday of the person
+  * public Person(String name) constructor sets the current date (i.e., the date when the program is run) to be the birthday of the person
+  
+  Example program:
+
+  public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", new MyDate(15, 2, 1983));
+        Person steve = new Person("Steve");
+
+        System.out.println( pekka );
+        System.out.println( steve );
+    }
+  }
+  
+  Output:
+  Pekka, born 15.2.1983
+  Steve, born 9.2.2012
+  
+  * Note: The last line depends on the day when the code is executed!

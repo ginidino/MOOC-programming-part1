@@ -1,7 +1,7 @@
 Exercuse94 is about PhoneBook and is divided into 3 part
 
 Exercise 94.1 is about Person
-  * using a class, Person
+  * using a Person class
   public static void main(String[] args) {
       Person pekka = new Person("Pekka Mikkola", "040-123123");
 

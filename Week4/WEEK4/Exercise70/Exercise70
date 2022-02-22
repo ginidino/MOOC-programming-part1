@@ -1,1 +1,4 @@
-
+Exercise70 is about Combining ArrayLists
+  * Create the method public static void combine(ArrayList<Integer> first, ArrayList<Integer> second) 
+    that inserts the items in a list called second to a list called first. 
+    The order of the items can be anything and the same item can appear in the list more than once. 

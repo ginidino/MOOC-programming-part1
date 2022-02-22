@@ -1,0 +1,3 @@
+Create the method smartCombine that works like the previous combine method except that numbers can be on the list only once. 
+This means that the method adds a new number to the list only if the list does not already contain that number. 
+You might find the method contains from the ArrayList class useful. You can use that method to check if a number is in the list.

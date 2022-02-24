@@ -1,0 +1,22 @@
+Exercise72
+Initial state
+Barto's account balance: 100.0
+Barto's account in Switzerland balance: 1000000.0
+Barto's account balance is now: 80.0
+Barto's Swiss account balance is now: 1000200.0
+Final state
+Barto's account balance: 80.0
+Barto's account in Switzerland balance: 1000200.0
+
+Exercise72.1
+Barto's account balance: 120.0
+
+Exercise72.2
+Matt's account balance: 900.0
+My account balance: 100.0
+
+Exercise72.3
+A balance: 50.0
+B balance: 25.0
+C balance: 25.0
+* Originally, There is no print result in Exercise72.3, but I want to check the output, so I put the print method

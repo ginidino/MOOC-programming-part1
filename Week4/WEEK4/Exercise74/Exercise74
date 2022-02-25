@@ -3,7 +3,7 @@ Exercise72 is about Multiplier
     - a constructor public Multiplier(int number).
     - a method public int multiply(int otherNumber) that returns otherNumber multiplied by number (i.e., the constructor parameter).
 
-  * Example of usage:
+  * code:
 
     Multiplier threeMultiplier = new Multiplier(3);
     System.out.println("threeMultiplier.multiply(2): " + threeMultiplier.multiply(2));

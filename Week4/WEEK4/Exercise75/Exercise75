@@ -47,7 +47,7 @@ Exercise 75.1 is about Implementing method decrease()
   * Implement the method decrease() so that when called, the object variable this.value is decreased by one. 
     When this is done, your program should work as the example above.
 
-Exercise 75.2: Value remains positive
+Exercise 75.2 is about Value remains positive
   * Change your implementation of the method decrease() so that the value of the counter will not drop below zero. 
     If the method is called when the value is zero, nothing should happen:
     
@@ -96,7 +96,7 @@ Exercise 75.3 is about Counter reset
     value: 0
     value: 0
 
-Exercise 75.4: Back to initial value
+Exercise 75.4 is about Back to initial value
   * Implement the method public void setInitial(), which returns the counter to its initial value:
 
     public class Main {

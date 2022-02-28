@@ -1,6 +1,6 @@
 package WEEK4;
 
-// 72.1: Your first account
+// Exercise72.1: Your first account
 public class Exercise721 {
 	public static void main(String[] args) {
 		Account bartosAccount = new Account("Barto's account",100.0);

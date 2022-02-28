@@ -11,9 +11,9 @@ public class Exercise72 {
 		System.out.println(bartosSwissAccount);
 
 		bartosAccount.withdrawal(20);
-		System.out.println("Barto's account balance is now: "+bartosAccount.balance());
+		System.out.println("Barto's account balance is now: "+ bartosAccount.balance());
 		bartosSwissAccount.deposit(200);
-		System.out.println("Barto's Swiss account balance is now: "+bartosSwissAccount.balance());
+		System.out.println("Barto's Swiss account balance is now: "+ bartosSwissAccount.balance());
 
 		System.out.println("Final state");
 		System.out.println(bartosAccount);

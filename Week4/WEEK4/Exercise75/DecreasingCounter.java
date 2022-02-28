@@ -15,10 +15,13 @@ public class DecreasingCounter {
 	// 75.1
 	public void decrease() {
 		// write here the code that decrements the value of counter by one
+		// 75.1: Implementing method decrease()
+		//this.value--;
+		
+		// 75.2: Value remains positive
 		if (this.value > 0) {
 			this.value--;
 		}
-		
 	}
 	// and here the rest of the methods
 	// 75.3

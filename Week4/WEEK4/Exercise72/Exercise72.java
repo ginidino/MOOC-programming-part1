@@ -1,5 +1,6 @@
 package WEEK4;
 
+// Exercise 72: Accounts
 public class Exercise72 {
 	public static void main(String[] args) {
 		Account bartosAccount = new Account("Barto's account",100.00);

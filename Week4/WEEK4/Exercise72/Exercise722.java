@@ -1,6 +1,6 @@
 package WEEK4;
 
-// Exercise 72.3: Money transfers
+// Exercise 72.2: Your first money transfer
 public class Exercise722 {
 	public static void main(String[] args) {
 		Account accoutOfMatt = new Account("Matt's account", 1000.0);

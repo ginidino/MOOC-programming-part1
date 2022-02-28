@@ -1,7 +1,7 @@
 package test4;
 
 public class BoundedCounter {
-	private int value;
+    private int value;
     private int upperLimit;
     
     public BoundedCounter(int upperLimit) {
@@ -26,7 +26,7 @@ public class BoundedCounter {
 		return this.value;
 	}
 	public void setValue(int value) {
-		if (value > 0 || value > this.upperLimit) {
+		if (value < 0 || value > this.upperLimit) {
 			return;
 		} 
 		this.value = value;

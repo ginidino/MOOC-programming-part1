@@ -1,1 +1,179 @@
+Exercise77 is about Lyyra-card and is divided into 6 part
+  * In this assignment, we implement the class LyyraCard that simulates the Lyyra card.
 
+Exercise 77.1 is about Class skeleton
+  * Start by adding the class LyyraCard to your project.
+  * Then implement the LyyraCard constructor that gets the starting balance of the card as parameter. 
+    The card saves the balance in the object variable balance. Implement also the toString method that returns a string of the form "The card has X euros".
+
+  * The skeleton of class LyyraCard looks like this:
+
+    public class LyyraCard {
+        private double balance;
+
+        public LyyraCard(double balanceAtStart) {
+            // write code here
+        }
+
+        public String toString() {
+            // write code here
+        }
+    }
+    
+  * The following main program can be used to test the program:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard card = new LyyraCard(50);
+            System.out.println(card);
+        }
+    }
+    
+  * The output should be:
+    The card has 50.0 euros
+    
+Exercise 77.2 is about Paying with card
+  * Implement the following methods to LyyraCard:
+
+    public void payEconomical() {
+        // write code here
+    }
+
+    public void payGourmet() {
+        // write code here
+    }
+    
+  * Method payEconomical should decrease the balance by 2.50 euros and method payGourmet by 4.00 euros.
+
+  * The following main program can be used to test the program:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard card = new LyyraCard(50);
+            System.out.println(card);
+
+            card.payEconomical();
+            System.out.println(card);
+
+            card.payGourmet();
+            card.payEconomical();
+            System.out.println(card);
+        }
+    }
+    
+  * The output should be:
+    The card has 50.0 euros
+    The card has 47.5 euros
+    The card has 41.0 euros
+    
+Exercise 77.3 is about Balance nonnegative
+  * Change methods payEconomical and payGourmet so that if there is not enought money, the balance does not change.
+
+  * The following main program can be used to test the program:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard card = new LyyraCard(5);
+            System.out.println(card);
+
+            card.payGourmet();
+            System.out.println(card);
+
+            card.payGourmet();
+            System.out.println(card);
+        }
+    }
+    
+  * The output should be:
+    The card has 5.0 euros
+    The card has 1.0 euros
+    The card has 1.0 euros
+    
+  * Above, the second call payGourmet does not alter the balance since there is not enough money on the card for a gourmet lunch.
+
+Exercise 77.4 is about Loading money to card
+  * Add the LyyraCard the following method:
+
+    public void loadMoney(double amount) {
+        // write code here
+    }
+    
+  * The method should increase the balance of the card by the given amount. However, the maximum balance on a card is 150 euros. 
+    In case the balance after loading money would be more than that, it should be truncated to 150 euros.
+
+  * The following main program can be used to test the program:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard card = new LyyraCard(10);
+            System.out.println(card);
+
+            card.loadMoney(15);
+            System.out.println(card);
+
+            card.loadMoney(10);
+            System.out.println(card);
+
+            card.loadMoney(200);
+            System.out.println(card);
+        }
+    }
+    
+  * The output should be:
+    The card has 10.0 euros
+    The card has 25.0 euros
+    The card has 35.0 euros
+    The card has 150.0 euros
+    
+Exercise 77.5 is about Loading a negative amount
+  * Change the method loadMoney so that the balance of the card does not change if the amount to load is negative.
+
+  * The following main program can be used to test the program:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard card = new LyyraCard(10);
+            System.out.println("Pekka: " + card);
+            card.loadMoney(-15);
+            System.out.println("Pekka: " + card);
+        }
+    }
+    
+  * The output should be:
+    Pekka: The card has 10.0 euros
+    Pekka: The card has 10.0 euros
+    
+Exercise 77.6 is about Multiple cards
+  * Write a main method that does the following:
+
+    - Creates a LyyraCard for Pekka with initial balance of 20 euros
+    - Creates a LyyraCard for Brian with initial balance of 30 euros
+    - Pekka buys gourmet lunch
+    - Brian buys economical lunch
+    - cards are printed (both on their own row, starting with the name of the card owner)
+    - Pekka loads 20 euros
+    - Brian buys gourmet lunch
+    - cards are printed (both on their own row, starting with the name of the card owner)
+    - Pekka buys economical lunch
+    - Pekka buys economical lunch
+    - Brian loads 50 euros
+    - cards are printed (both on their own row, starting with the name of the card owner)
+    
+  * The main skeleton is as follows:
+
+    public class Main {
+        public static void main(String[] args) {
+            LyyraCard cardPekka = new LyyraCard(20);
+            LyyraCard cardBrian = new LyyraCard(30);
+
+            // write code here
+        }
+    }
+    
+  * The output should be:
+    Pekka: The card has 16.0 euros
+    Brian: The card has 27.5 euros
+    Pekka: The card has 36.0 euros
+    Brian: The card has 23.5 euros
+    Pekka: The card has 31.0 euros
+    Brian: The card has 73.5 euros

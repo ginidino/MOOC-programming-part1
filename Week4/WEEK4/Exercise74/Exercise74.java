@@ -1,5 +1,6 @@
 package WEEK4;
 
+// Exercise 74: Multiplier
 public class Exercise74 {
 	public static void main(String[] args) {
 		Multiplier threeMultiplier = new Multiplier(3);

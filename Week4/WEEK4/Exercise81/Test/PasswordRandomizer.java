@@ -1,20 +1,36 @@
-package Test;
+package WEEK4;
 
-import java.util.Scanner;
 import java.util.Random;
 
-// create random password by using lowercase
 public class PasswordRandomizer {
-	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
-		Random random = new Random();
-		System.out.println("Enter a length of password");
-		int len = Integer.parseInt(reader.nextLine());
+	// Define the variables here
+	private Random random;
+	private int length;
+
+	public PasswordRandomizer(int length) {
+		// Format the variable here
+		this.length = length;
+		random = new Random();
+	}
+
+	public String createPassword() {
+		// Write the code here which returns the new password
+		// version 1
 		String password = "";
-		for (int i = 0; i < len; i++) {
+		for (int i = 0; i < this.length; i++) {
 			char symbol = "abcdefghijklmnopqrstuvwxyz".charAt(random.nextInt(26));
 			password += symbol;
 		}
-		System.out.println(password);
+		return password;
+		
+		/* // version 2
+		String symbol = "abcdefghijklmnopqrstuvwxyz";
+		String password = "";
+		for (int i = this.length; i > 0; i--) {
+			int numOfChar = random.nextInt(symbol.length());
+			char c = symbol.charAt(numOfChar);
+			password += c;
+		}
+		return password;*/
 	}
 }

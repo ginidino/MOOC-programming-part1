@@ -22,15 +22,5 @@ public class PasswordRandomizer {
 			password += symbol;
 		}
 		return password;
-		
-		/* // version 2
-		String symbol = "abcdefghijklmnopqrstuvwxyz";
-		String password = "";
-		for (int i = this.length; i > 0; i--) {
-			int numOfChar = random.nextInt(symbol.length());
-			char c = symbol.charAt(numOfChar);
-			password += c;
-		}
-		return password;*/
 	}
 }

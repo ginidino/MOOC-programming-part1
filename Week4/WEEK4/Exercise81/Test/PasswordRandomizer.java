@@ -15,15 +15,8 @@ public class PasswordRandomizer {
 
 	public String createPassword() {
 		// Write the code here which returns the new password
-		// version 1
-		String password = "";
-		for (int i = 0; i < this.length; i++) {
-			char symbol = "abcdefghijklmnopqrstuvwxyz".charAt(random.nextInt(26));
-			password += symbol;
-		}
-		return password;
 		
-		/* // version 2
+		// version 2
 		String symbol = "abcdefghijklmnopqrstuvwxyz";
 		String password = "";
 		for (int i = this.length; i > 0; i--) {
@@ -31,6 +24,6 @@ public class PasswordRandomizer {
 			char c = symbol.charAt(numOfChar);
 			password += c;
 		}
-		return password;*/
+		return password;
 	}
 }

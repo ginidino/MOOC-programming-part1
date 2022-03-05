@@ -1,10 +1,12 @@
 Exercise82 is about Lottery
   * Your assignment is to expand the class LotteryNumbers, which draws the lottery numbers of the week. 
     The numbers of the week consist of 7 different numbers between 1 and 39. The class has the following functionality:
-    - the constructor LotteryNumbers creates a new LotteryNumbers object, which contains the new drawn numbers
+   
+   - the constructor LotteryNumbers creates a new LotteryNumbers object, which contains the new drawn numbers
     - the method numbers returns the drawn numbers of this draw
     - the method drawNumbers draws new numbers
     - the method containsNumber reveals if the number is among the drawn numbers
+  
   * The frame of the class is as follows:
 
     import java.util.ArrayList;

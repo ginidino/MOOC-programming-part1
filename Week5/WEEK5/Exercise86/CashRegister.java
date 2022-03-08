@@ -46,7 +46,7 @@ public class CashRegister {
 	}
 	// Exercise 86.2: Cash Register and paying with cash
 	public String toString() {
-        return "money in register "+cashInRegister+" economical lunches sold: "+economicalSold+" gourmet lunches sold: "+gourmetSold;
+        return "money in register " + cashInRegister + " economical lunches sold: " + economicalSold + " gourmet lunches sold: " + gourmetSold;
     }
 	// Exercise 86.3: Paying with card
 	public boolean payEconomical(LyyraCard card) {

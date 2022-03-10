@@ -6,8 +6,8 @@ public class Exercise89 {
 		Clock clock = new Clock(23, 59, 50);
 		
 		for (int i = 0; i < 20; i++) {
-			System.out.println( clock );
-            clock.tick();
+			System.out.println(clock);
+            		clock.tick();
 		}
 	}
 }

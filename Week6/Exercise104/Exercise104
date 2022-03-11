@@ -1,1 +1,144 @@
+Exercise 104 is about Sorting and is divided into 5 part
+  * Note: in this assignment you're supposed to sort the array yourself. You can't use the help of the Arrays.sort()-method or ArrayLists!
 
+Exercise 104.1 is about Smallest
+  * Implement a method smallest, which returns the smallest value in the array.
+
+    The frame of the method is as follows:
+
+    public static int smallest(int[] array) {
+        // write the code here
+    }
+  
+  * NOTE: You can't change the array that gets passed into the method!
+
+  * The following code demonstrates the functionality of the method:
+
+    int[] values = {6, 5, 8, 7, 11};
+    System.out.println("smallest: " + smallest(values));
+  
+  * output
+    smallest: 5
+  
+Exercise 104.2 is about The index of the smallest
+  * Implement a method indexOfTheSmallest, which returns the index of the smallest value in the array 
+   (the position of the value in the array, that is).
+
+  * The frame of the method looks like this:
+
+    public static int indexOfTheSmallest(int[] array) {
+        // code goes here
+    }
+  
+  * NOTE: You can't change the array that gets passed into the method as a parameter!
+
+  * The following code demonstrates the functionality of the method:
+
+    // indexes:   0  1  2  3  4
+    int[] values = {6, 5, 8, 7, 11};
+    System.out.println("Index of the smallest: " + indexOfTheSmallest(values));
+
+  * output
+    Index of the smallest: 1
+  
+  * The smallest value of the table is 2 and its index (its location) in the array is 1. 
+    Remember that the numbering of an array begins from 0.
+
+Exercise 104.3 is about Index of the smallest at the end of an array
+  * Implement a method indexOfTheSmallestStartingFrom, which works just like the method of the previous assignment, 
+    but only takes into consideration the end of an array starting from a certain index. 
+    In addition to the array the method gets as parameter an index, from which the search for the smallest will be started.
+
+  * The frame of the method is as follows:
+
+    public static int indexOfTheSmallestStartingFrom(int[] array, int index) {
+        // write the code here
+    }
+  
+  * NOTE: You can't change the array that gets passed into the method as a parameter!
+
+  * The following code demonstrates the functionality of the method:
+
+    // indexes:    0  1  2  3   4
+    int[] values = {-1, 6, 9, 8, 12};
+    System.out.println(indexOfTheSmallestStartingFrom(values, 1));
+    System.out.println(indexOfTheSmallestStartingFrom(values, 2));
+    System.out.println(indexOfTheSmallestStartingFrom(values, 4));
+
+  * output
+    1
+    3
+    4
+  
+  * In the example, the first method call finds the index of the smallest value starting from index 1. 
+    Starting from index 1 the smallest value is 6, and its index is 1. 
+    Respectively the second method call looks for the index of the smallest value starting from index 2. 
+    In this case the smallest value is 8 and its index is 3. 
+    The last call starts from the last cell of the array, in this case there is no other cells so the smallets value is in index 4.
+
+Exercise 104.4 is about Swapping values
+  * Create a method swap, to which will be passed an array and two of its indexes. The method swaps the values in the indexes around.
+
+  * The frame of the method looks like this:
+
+    public static void swap(int[] array, int index1, int index2) {
+        // code goes here
+    }
+  
+  * The following showcases the functionality of the method. 
+    In printing the array we'll use the Arrays.toString-method which formats the array into a string:
+
+    int[] values = {3, 2, 5, 4, 8};
+
+    System.out.println( Arrays.toString(values) );
+
+    swap(values, 1, 0);
+    System.out.println( Arrays.toString(values) );
+
+    swap(values, 0, 3);
+    System.out.println( Arrays.toString(values) );
+
+  * output
+    [3, 2, 5, 4, 8]
+    [2, 3, 5, 4, 8]
+    [4, 3, 5, 2, 8]
+  
+Exercise 104.5 is about Sorting
+  * Now we've got a set of useful methods, with which we can implement a sorting algorithm known as selection sorting.
+
+  * The idea of selection sorting is this:
+    - Move the smallest number of the array to index 0.
+    - Move the second smallest number to the index 1.
+    - Move the third smallest number to the index 2.
+    - and so forth
+
+  * In other words:
+  - Inspect the array starting from index 0. Swap the value in index 0 and the smallest value in the array starting from index 0.
+  - Inspect the array starting from index 1. Swap the value in index 1 and the smallest value in the array starting from index 1.
+  - Inspect the array starting from index 2. Swap the value in index 2 and the smallest value in the array starting from index 2.
+  - and so forth
+
+  * Implement the method sort, which is based on the idea above. The method ought to have a loop that goes through the indexes of the array. 
+    The methods smallestIndexStartingFrom and swap are surely useful. 
+    Also print the contents of the array before sorting and after each round to be able to make sure that the algorithm works correctly.
+
+  * Body of the method:
+
+    public static void sort(int[] array) {
+    }
+  
+  * Test the functionality of the method at least with this example:
+
+    int[] values = {8, 3, 7, 9, 1, 2, 4};
+    sort(values);
+  
+  * The program should print the following. Notice that you're to print the content of the array after each swap!
+
+  * output
+    [8, 3, 7, 9, 1, 2, 4]
+    [1, 3, 7, 9, 8, 2, 4]
+    [1, 2, 7, 9, 8, 3, 4]
+    [1, 2, 3, 9, 8, 7, 4]
+    [1, 2, 3, 4, 8, 7, 9]
+    [1, 2, 3, 4, 7, 8, 9]
+    [1, 2, 3, 4, 7, 8, 9]

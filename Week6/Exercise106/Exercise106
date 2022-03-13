@@ -37,6 +37,7 @@ Exercise106 is about Implementation of binary search
 
     Value 8 is in the array
   
+  * The execution of the program looks like this:
     Values of the array: [-3, 2, 3, 4, 7, 8, 12]
 
     Enter searcher number: 99

@@ -1,1 +1,126 @@
+Exercise 90: Team and Players and is divided into 5 part
 
+Exercise 90.1 is about Class Team
+  * Implement a class Team. At this stage team has only a name (String) and the following functionality:
+    - a constructor that sets the team name
+    - getName, that returns the name
+  
+  * With the code:
+
+    public class Main {
+        public static void main(String[] args) {
+        Team barcelona = new Team("FC Barcelona");
+        System.out.println("Team: " + barcelona.getName());
+        }
+    }
+  
+  * the output should be::
+    Team: FC Barcelona
+  
+Exercise 90.2 is about Player
+  * Create a class Player with the instance variables for the player name and the amount of goals. 
+    A player should have two constructors: one that initializes the name and an another that initializes the name and the amount of goals. 
+    Implement also the following methods:
+    - getName, returns the player name
+    - goals, returns the amount of goals
+    - toString, returns a string representation that is formed as in the example below
+  
+  * Example usage:
+
+    public class Main {
+        public static void main(String[] args) {
+        Team barcelona = new Team("FC Barcelona");
+        System.out.println("Team: " + barcelona.getName());
+
+            Player brian = new Player("Brian");
+            System.out.println("Player: " + brian);
+
+            Player pekka = new Player("Pekka", 39);
+            System.out.println("Player: " + pekka);
+        }
+    }
+  
+  * and the expected output:
+    Team: FC Barcelona
+    Player: Brian, goals 0
+    Player: Pekka, goals 39
+  
+Exercise 90.3: Adding players to a team
+  * Add to the class Team the following methods:
+    - addPlayer, adds a player to the team
+    - printPlayers, prints the players in the team
+
+  * You should store the players to an instance variable of the type ArrayList<Player> within the class Team.
+
+  * With the code:
+
+    public class Main {
+        public static void main(String[] args) {
+        Team barcelona = new Team("FC Barcelona");
+
+            Player brian = new Player("Brian");
+            Player pekka = new Player("Pekka", 39);
+
+            barcelona.addPlayer(brian);
+            barcelona.addPlayer(pekka);
+            barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+            barcelona.printPlayers();
+        }
+    }
+  
+  * the output should be:
+    Brian, goals 0
+    Pekka, goals 39
+    Mikael, goals 1
+  
+Exercise 90.4 is about The team maximum size and current size
+  * Add to the class Team the methods
+    - setMaxSize(int maxSize), sets the maximum number of players that the team can have
+    - size, returns the number of players in the team
+
+  * By default the maximum number of players should be set to 16, and that can be changed with the method setMaxSize. 
+    Change the method addPlayer so that it does not add players to the team if the team already has the maximum number of players.
+
+  * With the code:
+
+    public class Main {
+        public static void main(String[] args) {
+        Team barcelona = new Team("FC Barcelona");
+            barcelona.setMaxSize(1);
+
+            Player brian = new Player("Brian");
+            Player pekka = new Player("Pekka", 39);
+            barcelona.addPlayer(brian);
+            barcelona.addPlayer(pekka);
+            barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+            System.out.println("Number of players: " + barcelona.size());
+        }
+    }
+  
+  * the output should be
+    Number of players: 1
+  
+Exercise 90.5 is about Goals of a team
+  * Add to the class Team the method
+    - goals, returns the total number of goals for all the players in the team
+  
+  * With the code:
+
+    public class Main {
+        public static void main(String[] args) {
+            Team barcelona = new Team("FC Barcelona");
+
+            Player brian = new Player("Brian");
+            Player pekka = new Player("Pekka", 39);
+            barcelona.addPlayer(brian);
+            barcelona.addPlayer(pekka);
+            barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+            System.out.println("Total goals: " + barcelona.goals());
+        }
+    }
+  
+  * the output should be
+    Total goals: 40

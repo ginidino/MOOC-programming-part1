@@ -15,12 +15,4 @@ public class Exercise096 {
 		}
 		return sum;
 	}
-	// using for loop
-	/*public static int sum(int[] array) {
-		int sum = 0;
-		for (int i = 0; i < array.length; i++) {
-			sum += array[i];
-		}
-		return sum;
-	}*/
 }
